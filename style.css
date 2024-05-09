@@ -1,0 +1,73 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+#main-box{
+    height:100dvh;
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#container{
+    background-color:lightblue;
+    height:400px;
+    width:300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+    flex-direction: column;
+    gap:1rem;
+    border-radius:30px;
+}
+.top{
+    height:300px;
+    width:300px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap:3rem;
+}
+
+input{
+    border:none;
+    height:2rem;
+    width:200px;
+    font-size:20px;
+    border-radius:10px;
+    padding-left:8px;
+    
+}
+#bottem{
+    display:none;
+    align-items: center;
+    gap:0.5rem;
+    margin-top:50px;
+}
+
+#wind-icon{
+    width:70px;
+}
+#humidity-icon{
+    width:70px;
+}
+label{
+    font-size:22px;
+    font-weight:550;
+}
+#humidity{
+    margin-top:30px;
+}
+button{
+    border-radius:5px;
+    height:30px;
+    width:5vw;
+    font-size:18px;
+    border:none;
+    background-color:darkcyan;
+}
