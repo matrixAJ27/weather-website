@@ -1,6 +1,10 @@
 const button = document.getElementById('button');
 button.addEventListener("click",takeData);
+const back=document.getElementById('back');
+back.addEventListener('click',function(){
+	location.reload();
 
+});
 
 function takeData (){
 const input = document.getElementById('input');
@@ -23,7 +27,7 @@ else{
 	
 	document.querySelector('.top').style.display="none";
 	
-	 function chommu(a){
+	function chommu(a){
 		console.log(a);
 		const temp=document.getElementById('temp');
 		const tempImg = document.getElementById('temp-img');
@@ -31,9 +35,10 @@ else{
 		document.querySelector('#bottem').style.display="flex";
 		document.getElementById('wind').innerHTML=a.wind_speed+"km";
 		document.getElementById('humidity').innerHTML=a.humidity+"%";
-            if (a.temp > 30) {	
-                tempImg.src="sun.png";
-				tempImg.style.width="100px";
+		document.querySelector('#back').style.display="block";
+		if (a.temp > 30) {		
+			tempImg.src="sun.png";
+			tempImg.style.width="100px";
 				document.getElementById('container').style.backgroundImage= "url('flat illustrator desert.jpg')";
 				document.getElementById('container').style.backgroundPosition="center";
 				document.getElementById('container').style.backgroundSize="cover";
@@ -50,7 +55,17 @@ else{
 				document.getElementById('humidity').style.color="white";
 				
             } else {
-                tempImg.src = 'cold_weather_image.jpg';
+				tempImg.src = 'snow.png';
+				tempImg.style.width="100px";
+				document.getElementById('container').style.backgroundImage= "url('winter pic.jpeg')";
+				document.getElementById('container').style.backgroundPosition="center";
+				document.getElementById('container').style.backgroundSize="cover";
+				document.getElementById('main-box').style.backgroundImage= "url('winter back.jpg')";
+				document.getElementById('main-box').style.backgroundPosition="center";
+				document.getElementById('humidity').style.color="white";
+				document.getElementById('temp').style.color="white";
+				document.getElementById('wind').style.color="white";
+				document.getElementById('back').style.color="white";
             }
 
 	 }

@@ -66,8 +66,17 @@ label{
 button{
     border-radius:5px;
     height:30px;
-    width:5vw;
+    width:80px;
     font-size:18px;
     border:none;
     background-color:darkcyan;
+}
+#back{
+    display:none;
+    width: 300px;
+}
+i{
+    float:left;
+    margin-left:20px;
+    font-size:25px;
 }
